@@ -3,13 +3,13 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
-
-# THANKS
-
-    <name>
+    Jen Myers - @antiheroine
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
-    jQuery, Modernizr
+    Middleman (http://middlemanapp.com)
+    GitHub Pages (http://pages.github.com/)
+    Middleman-HTML5BP-Haml template (http://github.com/dannyprose/Middleman-HTML5BP-HAML)
+    middleman-gh-pages gem (http://github.com/neo/middleman-gh-pages)
+    Font Awesome (http://fortawesome.github.com/Font-Awesome/)
+    Typekit (http://typekit.com)
