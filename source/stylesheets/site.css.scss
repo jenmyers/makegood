@@ -1,0 +1,191 @@
+
+/* IMPORTS ********************************************************************************************/
+
+@import "compass/css3";
+@import "compass/layout";
+@import "compass/reset";
+@import "_layout/grid";
+
+/* INCLUDES ********************************************************************************************/
+
+@include font-face("fontawesome", font-files("fontawesome-webfont.woff", "fontawesome-webfont.ttf", "fontawesome-webfont.svg"), "fontawesome-webfont.eot");
+
+/* BASE ********************************************************************************************/
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: "minion-pro", serif;
+}
+
+/* LAYOUT ********************************************************************************************/
+
+header, .main {
+  @include container;
+}
+
+header {
+  margin-top: 2em;
+  text-align: center;
+}
+
+nav {
+  background: #fff;
+  border-bottom: 1px dotted #ccc;
+  border-top: 1px dotted #ccc;
+  padding: 1em 0;
+  position: relative;
+  text-align: center;
+  ul {
+    li {
+      font-family: "hypatia-sans-pro";
+      font-weight: 900;
+      display: inline;
+      text-transform: uppercase;
+      padding: 0 1.5em;
+    }
+  }
+}
+
+.fixed {
+  padding: 1em 4em;
+  position: fixed;
+}
+
+.main {
+  text-align: left;
+  .opportunity {
+    @include pie-clearfix;
+    margin: 3em 0 6em 0;
+    .opportunity-link {
+      font-size: 1.4em;
+      font-weight: bold;
+    }
+  }
+  ul.submit {
+    margin: 3em 6em 0 6em;
+    li {
+      font-family: "hypatia-sans-pro";
+      font-weight: 600;
+      padding: 0.5em 0;
+      text-transform: uppercase;
+      .icon {
+        font-size: 2.6em;
+        margin-right: 0.5em;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+footer {
+  @include border-top-left-radius(3px);
+  @include border-top-right-radius(3px);
+  background-color: #333;
+  color: #fff;
+  font-family: "hypatia-sans-pro";
+  margin-top: 4em;
+  padding: 1em 1em 2em 1em;
+  text-align: right;
+}
+
+/* TYPOGRAPHY ********************************************************************************************/
+
+h1, h2, h3, h4 {
+  font-family: "hypatia-sans-pro";
+}
+
+h1 {
+  font-size: 5em;
+  font-weight: 900;
+  margin: 0.2em 0;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #999;
+  font-size: 1.8em;
+  line-height: 130%;
+  margin: 0.2em 0 1em 0em;
+}
+
+h3 {
+  border-top: 1px solid #ccc;
+  font-size: 2em;
+  font-weight: 900;
+  margin-bottom: 3em;
+  margin-top: 3em;
+  padding-top: 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h4 {
+  border-bottom: 1px dotted #ccc;
+  color: #666;
+  font-size: 1.7em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+h5 {
+  font-weight: bold;
+  font-size: 1.4em;
+  line-height: 130%;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 1.3em;
+  line-height: 150%;
+  margin: 1em 0;
+}
+
+/* ICONS ********************************************************************************************/
+
+.icon {
+  &:before {
+    font-family: 'fontawesome';
+    content: attr(data-icon);
+    speak: none;
+  }
+  &.home {
+    font-size: 5em;
+    margin: 1em 0 0.6em 0;
+  }
+}
+
+/* ANCHORS ********************************************************************************************/
+
+a {
+  color: #d64d08;
+  text-decoration: none;
+  &:hover {
+    color: #333;
+  }
+  .icon.home {
+    color: #333;
+    &:hover {
+      color: #d64d08;
+    }
+  }
+}
+
+p a {
+  border-bottom: 1px solid #ccc;
+  &:hover {
+    border-bottom: 1px solid #999;
+  }
+}
+
+h3 a {
+  color: #333;
+}
+
+footer a {
+  color: #fff;
+  &:hover {
+    color: #d64d08;
+  }
+}

@@ -1,0 +1,101 @@
+%header
+  :plain
+    <a name="home"><div aria-hidden="true" class="icon home" data-icon="&#xf087;"></div></a>
+  %h1 Make Good
+  %h2 Virtual volunteering opportunities for web designers and developers
+  %nav
+    %ul
+      %li=link_to "Home", "#home"
+      %li=link_to "Opportunities", "#opportunities"
+      %li=link_to "FAQ", "#faq"
+      %li=link_to "Submit", "#submit"
+  %p.intro
+    Sometimes, in the tech community, we get wrapped up in the bad stuff. Sometimes, it's stuff we need to address. Sometimes, we let it run away with us and we lose balance and perspective. So let's make sure we focus on the good, too. We have amazing talents and resources lots of other people in the world don't have. Make something good out of them.
+%div.main
+
+  // OPPORTUNITIES SECTION
+  %h3
+    %a{:name => "opportunities"} Opportunities
+
+  // BEGIN OPPORTUNITY LISTING
+  .opportunity
+    // Opportunity Title
+    %h4 Web Development Support in Drupal
+    // Opportunity Description
+    %p
+      "South Bronx United, a non profit youth development organization, is seeking volunteers with Drupal expertise to help improve the community organization's website. All levels of support are welcome as there is a range of help that is needed from very small tasks that could be executed in a matter of hours to larger projects and/or maintenance.""
+    // Opportunity Link - replace the link destination with either the external opportunity listing or an email address to contact the organization/individual directly
+    :plain
+      <a href="http://www.idealist.org/view/volop/9Kmk478nfHSP/" class="opportunity-link"><span aria-hidden="true" class="icon" data-icon="&#xf08e;"></span> For more information, visit the website</a>
+  // END OPPORTUNITY LISTING
+  
+  // BEGIN OPPORTUNITY LISTING
+  .opportunity
+    // Opportunity Title
+    %h4 iOS/Android App Development
+    // Opportunity Description
+    %p
+      "New Eyes for the Needy is seeking a volunteer to create an app for iPhone and Android to help launch our nonprofit into the 21st century. We believe the future is mobile and want to be prepared to capture the attention and focus of younger generations. We want to make it easy for potential supporters to find us, keep in touch and donate to our mission of improving the vision of the poor in the U.S. and in developing countries."
+    // Opportunity Link - replace the link destination with either the external opportunity listing or an email address to contact the organization/individual directly
+    :plain
+      <a href="http://www.idealist.org/view/volop/5FpJP3Dg66BD/" class="opportunity-link"><span aria-hidden="true" class="icon" data-icon="&#xf08e;"></span> For more information, visit the website</a>
+  // END OPPORTUNITY LISTING
+  
+  // BEGIN OPPORTUNITY LISTING
+  .opportunity
+    // Opportunity Title
+    %h4 Web Design and Development (WordPress)
+    // Opportunity Description
+    %p
+      "Ashoka's Youth Venture SF Bay Area has been training youth in the Bay Area to launch their own social enterprises for the last 3 years. Since our founding, we have grown with the intention of becoming our own independent entity. After much planning and preparation, we are now ready to relaunch as Youth SEED (Youth Social Entrepreneurship for Equitable Development).... In order to launch as Youth SEED, we are seeking a volunteer web desinger, to create a new website that accurately reflects our work in the local community."
+    // Opportunity Link - replace the link destination with either the external opportunity listing or an email address to contact the organization/individual directly
+    :plain
+      <a href="http://www.idealist.org/view/volop/jNZzptmHfZh4/" class="opportunity-link"><span aria-hidden="true" class="icon" data-icon="&#xf08e;"></span> For more information, visit the website</a>
+  // END OPPORTUNITY LISTING
+  
+  // BEGIN OPPORTUNITY LISTING
+  .opportunity
+    // Opportunity Title
+    %h4 Web Development
+    // Opportunity Description
+    %p
+      "We are looking for a student or freelance web designer to transfer our website from its current platform (on iWeb, which no longer exists for Mac) to something easy to update (WordPress, Django)."
+    // Opportunity link
+    :plain
+      <a href="http://www.idealist.org/view/volop/StwKWts7tmJd/" class="opportunity-link"><span aria-hidden="true" class="icon" data-icon="&#xf08e;"></span> For more information, visit the website</a>
+  // END OPPORTUNITY LISTING
+
+  // FAQ SECTION
+  %h3
+    %a{:name => "faq"} FAQ
+  %h5 Where are these opportunities coming from?
+  %p
+    They are being curated from online listings of volunteer opportunities, including
+    =link_to "Idealist.org", "http://idealist.org"
+    and
+    =link_to "Volunteer Match", "http://volunteermatch.org"
+    \. I am also collecting suggestions via Twitter, email or by pull request.
+  %h5 Can you answer my questions about any of these opportunities?
+  %p
+    No, I am just grabbing information posted freely online and collecting it here for easier access. If you have questions about a particular opportunity, please follow the instructions at each link for contacting the organization offering the opportunity.
+  %h5 The opportunity listed here is no longer available or isn't what it was advertised as. What do I do?
+  %p
+    Let me know so I can remove it from the site and help you find a new one. :)
+
+  // SUBMIT SECTION
+  %h3
+    %a{:name => "submit"} Submit
+  %p
+    Do you know of (or are) an organization or individual who could use some help with a web design or development project? Let me know and I'll add it to the list here. Please make sure to include the contact info for the organization or the link to the third-party website where the opportunity details are posted.
+  %ul.submit
+    %li
+      :plain
+        <a href="http://github.com/jenmyers/makegood"><span aria-hidden="true" class="icon" data-icon="&#xf09b;"></span> Via pull request at GitHub</a>
+    %li
+      :plain
+        <a href="http://twitter.com/antiheroine"><span aria-hidden="true" class="icon" data-icon="&#xf099;"></span> Via Twitter at @antiheroine</a>
+    %li
+      :plain
+        <a href="mailto:hello@jenmyers.net"><span aria-hidden="true" class="icon" data-icon="&#xf003;"></span> Via email at hello@jenmyers.net</a>
+%footer
+  =link_to "Made by Jen.", "http://jenmyers.net"
