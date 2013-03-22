@@ -31,14 +31,15 @@ header {
 
 nav {
   background: #fff;
-  border-bottom: 1px dotted #ccc;
-  border-top: 1px dotted #ccc;
+  border-bottom: 5px solid #ccc;
+  border-top: 5px solid #ccc;
   padding: 1em 0;
   position: relative;
   text-align: center;
   ul {
     li {
       font-family: "hypatia-sans-pro";
+      font-size: 1.2em;
       font-weight: 900;
       display: inline;
       text-transform: uppercase;
